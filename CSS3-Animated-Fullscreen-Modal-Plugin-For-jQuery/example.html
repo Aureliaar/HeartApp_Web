@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ap-fullscreen-modal Demos</title>
+		<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="lib/css/ap-fullscreen-modal.css" type="text/css" media="screen" />
+
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		 <script src="lib/js/ap-fullscreen-modal.js"></script>
+		<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	</head>
+
+	<body>
+    <div class="jquery-script-ads" align="center" style="margin:30px auto;"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+		<div class="controls-container">
+			<header>
+				ap-fullscreen-modal
+			Demos</header>
+			<div class="options">
+				<input type="button" value="Modal 1" id="open-modal-1" />
+				<input type="button" value="Modal 2" id="open-modal-2" />
+			</div>
+			<footer>
+				<a href="http://www.armin-pfaeffle.de" target="_blank" rel="nofollow">armin-pfaeffle.de</a>
+				<a href="https://github.com/armin-pfaeffle/ap-fullscreen-modal" target="_blank" rel="nofollow">github.com</a>
+			</footer>
+		</div>
+
+		<div style="display: none;">
+
+			<div id="modal-content-1" class="modal-content">
+				<div class="wrapper">
+					<h2>Modal Form 1</h2>
+					<div class="form">
+						<div class="row">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" />
+						</div>
+						<div class="row">
+							<label for="subject">Subject</label>
+							<input type="text" name="subject" id="subject" />
+						</div>
+						<div class="row">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="5"></textarea>
+						</div>
+						<div class="row buttons">
+							<a href="#close-modal" class="close-modal">Cancel</a>
+							<input type="submit" value="send" id="send" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="modal-content-2" class="modal-content">
+				<div class="wrapper">
+					<h2>Modal Form 2</h2>
+					<div class="form">
+						<div class="row">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" />
+						</div>
+						<div class="row">
+							<label for="subject">Subject</label>
+							<input type="text" name="subject" id="subject" />
+						</div>
+						<div class="row">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="5"></textarea>
+						</div>
+						<div class="row buttons">
+							<a href="#close-modal" class="close-modal">Cancel</a>
+							<input type="submit" value="send" id="send" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#modal-content-1').apFullscreenModal({
+					openSelector: '#open-modal-1',
+					backgroundColor: '#fafafa',
+					closeSelector: '.close-modal, #send',
+				});
+
+				$('#modal-content-2').apFullscreenModal({
+					backgroundColor: '#fafafa',
+					openSelector: '#open-modal-2',
+					closeSelector: '.close-modal, #send',
+					animationDuration: 1000
+				});
+			});
+		</script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	</body>
+</html>

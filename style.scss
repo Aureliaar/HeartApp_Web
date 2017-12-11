@@ -1,0 +1,95 @@
+ $lightest-blue: #a3d6ec;
+ $light-blue: #B7EEE9;
+ $medium-blue: #01B2A8;
+ $dark-blue: #1fc6bd;
+ $dark-gray: #414143;
+ $orange: #FF5800;
+
+ *{
+	border: 0;
+	margin: 0;
+	padding-top: 0!important;
+	padding-bottom: 0!important;
+}
+body { overflow: hidden;
+	background-color: $light-blue;
+
+}
+img{
+	width:100%;
+	height:100%;
+	object-fit: contain;
+	border-radius: 3vh;
+	border: 5%;
+}
+
+div.total{
+}
+div.imagediv{
+		background: #ccc;
+	
+        background: -webkit-radial-gradient(circle, white, $light-blue 70%);
+		
+		background: -moz-radial-gradient(circle, white, $light-blue 70%);
+		background: radial-gradient(circle, white, $light-blue 70%);
+}
+div.threebuttons{
+	width: 100%; 
+	height:20%; 
+	background-color: $lightest-blue ; 
+	margin-left:auto; 
+	margin-right:auto; 
+	font-size:0;
+	display: flex;
+	align-content: space-around;
+	align-items: flex-end;
+}
+div.textarea{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+div.textblock{
+	text-align: center;
+	display: inline-block;
+	height:100%;
+	width: 50%;
+	background-color: $dark-gray;
+	margin: auto;
+	flex-shrink: 0;
+	font-family: Helvetica;
+	font-size: 1.8em;
+	font-style: normal;
+	font-variant: normal;
+}
+
+
+div.textwrapper{
+	width: 100%;
+	height:16.6%;
+	line-height: 1.65em;
+	overflow: hidden;
+	white-space: nowrap;
+	vertical-align: middle;
+	background-color: $lightest-blue ; 
+
+}
+div.one:nth-of-type(odd){
+	background-color: $light-blue;
+}/*
+div.two{
+	background-color: $light-blue ; 
+}*/
+div.two:nth-of-type(even){
+	background-color: $light-blue;
+
+}
+div.header{
+	line-height: 1.5em;
+	font-family: Verdana;
+	font-weight: bold;
+	background-color: $dark-blue;
+}
