@@ -1,46 +1,77 @@
+<!doctype html>
 
- <head>
- 	 <link rel = "stylesheet"   type = "text/css"   href = "toggle.css" />
- 	 <link rel = "stylesheet"   type = "text/css"   href = "style.css" />
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- </head>
- <body>
-<div id="container" class="total">
- <div class="imagediv" style="width: 100%; height:68%"><img src="Heart-1.png"></div>
- <div id="buttons" style="width: 100%; height:33%"> 
- 	<div class="threebuttons" > 
-<label class="switch">
-  <input id="leftswitch" type="checkbox">
-  <span class="slider round"></span>
-</label> <label class="switch">
-  <input id="centerswitch" type="checkbox">
-  <span class="slider round"></span>
-</label> <label class="switch">
-  <input id="rightswitch" type="checkbox">
-  <span class="slider round"></span>
-</label> 
- 	</div>
- 	<div id="ui" class="textarea" > 
- 		<div id="malformations" class="textblock">
- 			<div class="header textwrapper">Malformazioni</div>
- 			<div class="one textwrapper">Ventricolo sx. Ipoplastico</div>
- 			<div class="one textwrapper">Valvola Aortica Bicuspide</div>
- 			<div class="one textwrapper">Generic</div>
- 			<div class="one textwrapper">Click to add...</div>
- 		</div>
- 		<div id="operations" 	class="textblock">
- 			<div class="header textwrapper">Operazioni</div>
- 			<div class="two textwrapper ">BT Shunt</div>
- 			<div class="two textwrapper ">CT Shunt</div>
- 			<div class="two textwrapper ">DT Shunt</div>
- 			<div class="two textwrapper ">ET Shunt</div>
- 			<div class="two textwrapper ">Click to add...</div>
+	<link rel = "stylesheet"   type = "text/css"   href = "toggle.css" />
+	<link rel = "stylesheet"   type = "text/css"   href = "style.css" />
+
+	<!-- Modal https://www.jqueryscript.net/lightbox/CSS3-Animated-Fullscreen-Modal-Plugin-For-jQuery.html -->
+	<link rel="stylesheet" href="lib/css/ap-fullscreen-modal.css" type="text/css" media="screen" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="lib/js/ap-fullscreen-modal.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
 
 
- 		</div>
- 	</div>
 
- </div>
 
+<div style="display: none;">
+	<div id="modal-content" class="modal-content">
+		<div class="wrapper">
+			<div class="form">
+				<div class="row">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" />
+				</div>
+				<div class="row buttons">
+					<a href="#close-modal" class="close-modal">Cancel</a>
+					<input type="submit" value="send" id="send" />
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
+
+<div id="container" class="total">
+	<div class="imagediv" >
+		<img src="Heart-1.png">
+	</div>
+
+	<div id="UI" >
+		<div class="threebuttons" >
+			<label class="switch">
+				<input id="leftswitch" type="checkbox">
+				<span class="slider round"></span>
+			</label> <label class="switch">
+			<input id="centerswitch" type="checkbox">
+			<span class="slider round"></span>
+		</label> <label class="switch">
+			<input id="rightswitch" type="checkbox">
+			<span class="slider round"></span>
+		</label>
+		</div>
+		<div id="ui" class="textarea" >
+			<div id="malformations" class="textblock">
+				<div class="header textwrapper">Malformazioni</div>
+				<div class="one textwrapper">Ventricolo sx. Ipoplastico</div>
+				<div class="one textwrapper">Valvola Aortica Bicuspide</div>
+				<div class="one textwrapper">Generic</div>
+				<div class="one textwrapper">Click to add...</div>
+			</div>
+			<div id="operations" 	class="textblock">
+				<div class="header textwrapper">Operazioni</div>
+				<div class="two textwrapper ">BT Shunt</div>
+				<div class="two textwrapper ">CT Shunt</div>
+				<div class="two textwrapper ">DT Shunt</div>
+				<div class="two textwrapper "><input type="button" value="Click to add" id="open-modal-1" />
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
 </body>

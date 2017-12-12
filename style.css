@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
 * {
   border: 0;
   margin: 0;
@@ -11,15 +16,18 @@ body {
 img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  border-radius: 3vh;
-  border: 5%; }
+  object-fit: contain; }
 
 div.imagediv {
   background: #ccc;
   background: -webkit-radial-gradient(circle, white, #B7EEE9 70%);
   background: -moz-radial-gradient(circle, white, #B7EEE9 70%);
-  background: radial-gradient(circle, white, #B7EEE9 70%); }
+  background: radial-gradient(circle, white, #B7EEE9 70%);
+  height: 67vh;
+  width: 100%; }
+
+div.UI {
+  height: 33vh; }
 
 div.threebuttons {
   width: 100%;
