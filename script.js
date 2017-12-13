@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('#modal-content').apFullscreenModal({
-        openSelector: '#open-modal-1',
+        openSelector: '.modalbutton',
         backgroundColor: '#fafafa',
         closeSelector: '.close-modal, #send',
     });

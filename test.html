@@ -6,10 +6,14 @@
 	<link rel = "stylesheet"   type = "text/css"   href = "toggle.css" />
 	<link rel = "stylesheet"   type = "text/css"   href = "style.css" />
 
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1-rc.1/css/select2.min.css'>
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1-rc.1/css/select2.min.css'>
+
 	<!-- Modal https://www.jqueryscript.net/lightbox/CSS3-Animated-Fullscreen-Modal-Plugin-For-jQuery.html -->
 	<link rel="stylesheet" href="lib/css/ap-fullscreen-modal.css" type="text/css" media="screen" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="lib/js/ap-fullscreen-modal.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1-rc.1/js/select2.min.js'></script>
 	<script src="script.js"></script>
 </head>
 <body>
@@ -52,20 +56,20 @@
 			<span class="slider round"></span>
 		</label>
 		</div>
-		<div id="ui" class="textarea" >
+		<div  class="textarea" >
 			<div id="malformations" class="textblock">
 				<div class="header textwrapper">Malformazioni</div>
 				<div class="one textwrapper">Ventricolo sx. Ipoplastico</div>
 				<div class="one textwrapper">Valvola Aortica Bicuspide</div>
 				<div class="one textwrapper">Generic</div>
-				<div class="one textwrapper">Click to add...</div>
+				<div class="one textwrapper"><input class="modalbutton" type="button" value="Aggiungi..."/></div>
 			</div>
 			<div id="operations" 	class="textblock">
 				<div class="header textwrapper">Operazioni</div>
 				<div class="two textwrapper ">BT Shunt</div>
 				<div class="two textwrapper ">CT Shunt</div>
 				<div class="two textwrapper ">DT Shunt</div>
-				<div class="two textwrapper "><input type="button" value="Click to add" id="open-modal-1" />
+				<div class="two textwrapper "><input class="modalbutton" type="button" value="Aggiungi..."/>
 				</div>
 			</div>
 		</div>
