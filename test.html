@@ -1,20 +1,27 @@
 <!doctype html>
 
 <head>
+	<meta charset="UTF-8">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel = "stylesheet"   type = "text/css"   href = "toggle.css" />
-	<link rel = "stylesheet"   type = "text/css"   href = "style.css" />
 
-	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1-rc.1/css/select2.min.css'>
-	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1-rc.1/css/select2.min.css'>
 
 	<!-- Modal https://www.jqueryscript.net/lightbox/CSS3-Animated-Fullscreen-Modal-Plugin-For-jQuery.html -->
 	<link rel="stylesheet" href="lib/css/ap-fullscreen-modal.css" type="text/css" media="screen" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="lib/js/ap-fullscreen-modal.js"></script>
+	<!-- Select2 flat theme-->
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1-rc.1/css/select2.min.css'>
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1-rc.1/css/select2.min.css'>
+	<link rel="stylesheet" href="select2-flatstyle.css">
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1-rc.1/js/select2.min.js'></script>
 	<script src="script.js"></script>
+
+	<link rel = "stylesheet"   type = "text/css"   href = "style.css" />
+
+
 </head>
 <body>
 
@@ -26,12 +33,15 @@
 		<div class="wrapper">
 			<div class="form">
 				<div class="row">
-					<label for="name">Name</label>
-					<input type="text" name="name" id="name" />
+					<select class="js-example-basic-single">
+						<option value="AL">Alabama</option>
+						<option value="AL">Abkhama</option>
+						<option value="AL">Alyhama</option>
+						<option value="WY">Wyoming</option>
+					</select>
 				</div>
 				<div class="row buttons">
-					<a href="#close-modal" class="close-modal">Cancel</a>
-					<input type="submit" value="send" id="send" />
+					<a href="#close-modal" class="close-modal"></a>
 				</div>
 			</div>
 		</div>
